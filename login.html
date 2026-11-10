@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entrar — Aroma &amp; Grão</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#login">Pular para o formulário</a>
+<header class="top">
+  <div class="container bar">
+    <a class="logo" href="index.html">☕ Aroma &amp; Grão</a>
+    <div class="tools">
+      <button class="icon-btn" id="theme-btn" aria-pressed="false" aria-label="Alternar modo escuro">🌙</button>
+      <a class="btn ghost" href="index.html">Voltar ao site</a>
+    </div>
+  </div>
+</header>
+<main class="login-wrap">
+  <div class="login-box" id="login">
+    <h1 style="font-size:1.9rem">Entrar</h1>
+    <p class="help">Acesse sua conta para ver pedidos e pontos do clube Aroma &amp; Grão. (Demonstração acadêmica: nenhum dado é enviado.)</p>
+    <form id="form-login" novalidate style="max-width:none">
+      <div><label for="l-email">E-mail</label><input id="l-email" type="email" autocomplete="username" required aria-describedby="e-l-email"><p class="err" id="e-l-email"></p></div>
+      <div><label for="l-senha">Senha</label><input id="l-senha" type="password" autocomplete="current-password" required minlength="6" aria-describedby="e-l-senha"><p class="err" id="e-l-senha"></p></div>
+      <div><label style="display:flex;gap:.6rem;align-items:center;font-weight:400"><input type="checkbox" id="mostrar" style="width:22px;min-height:22px"> Mostrar senha</label></div>
+      <button class="btn" type="submit">Entrar</button>
+      <p class="ok" id="ok-login" role="status"></p>
+      <p class="help"><a href="#">Esqueci minha senha</a> · <a href="#">Criar conta</a></p>
+    </form>
+  </div>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
